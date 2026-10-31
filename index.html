@@ -1,12 +1,44 @@
-<html>
-  <head>
-    <title>Parque Zaragoza TV</title>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta clave para que la app se comporte como pantalla completa táctil en teléfonos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Parque Zaragoza TV - Tour Virtual</title>
     <link rel="icon" type="image/png" href="logotvpz.png">
-  </head>
-  <body>
-    <header>
-      <h2>Parque Zaragoza</h2>
-      <h2>Tour Virtual</h2>
-    </header>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <!-- Librería A-Frame para manejar modelos 3D en HTML -->
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Cabecera de bienvenida -->
+        <header class="app-header">
+            <img src="logotipo.png" alt="Logo Parque Zaragoza" class="app-logo">
+            <h1>Parque Zaragoza TV</h1>
+            <p>Guía Histórica Interactiva 3D</p>
+        </header>
+
+        <!-- Tarjeta de información central -->
+        <main class="card-welcome">
+            <h2>Explora el parque como nunca antes</h2>
+            <p>Camina por el Parque Zaragoza en el mundo real, descubre puntos de interés ocultos y desbloquea maquetas 3D a escala real.</p>
+            
+            <div class="features-list">
+                <div class="feature-item">📍 <span>GPS en tiempo real</span></div>
+                <div class="feature-item">🏛️ <span>Maqueta 1:1 Interactiva</span></div>
+                <div class="feature-item">📜 <span>Datos curiosos históricos</span></div>
+            </div>
+        </main>
+
+        <!-- Botón de acción táctil grande -->
+        <footer class="app-footer">
+            <button id="start-btn" class="btn-primary">Comenzar Tour</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
 </html>

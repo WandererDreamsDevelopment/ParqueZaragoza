@@ -1,0 +1,116 @@
+/* Reset y estilos base adaptados para móviles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Fondo oscuro moderno */
+    color: #f8fafc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px; /* Simula el ancho de pantalla de un smartphone */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+/* Cabecera */
+.app-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.app-header p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+/* Tarjeta Central */
+.card-welcome {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.card-welcome h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.card-welcome p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+    margin-bottom: 16px;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-item {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* Botón Táctil optimizado */
+.app-footer {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+    background-color: #0369a1;
+}
